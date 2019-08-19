@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/script2.js"></script>
+        <style>
+             table{
+              border: 3px solid rgb(0, 0, 0);
+              margin-left:auto; 
+              margin-right:auto;
+              margin-top: 150px;
+              margin-bottom: 70px;
+              background-color: rgb(192, 141, 141);
+              padding: 2px;
+              border-radius: 10px;
+              padding: 3px;
+            }
+           
+            .button {
+                background-color: white;
+                color:black;
+                text-align: center;
+                font-size: 16px;
+                margin: 1px;
+                width: 75px;
+                height: 40px;
+                font-weight: bold;
+                font-size: 17px;
+                border-radius: 8px;
+                border: 2px solid  rgb(192, 141, 141);
+            }
+            .textPane{
+                width: 312px;
+                height: 55px;
+                border-radius: 10px;
+                border: 3px solid rgb(0, 0, 0);
+                text-align: right;
+                font-size: 18px;
+            }
+           
+        </style>
+    </head>
+    <body>
+       <table style="height: 250px; width:250px;" id="RoundedTable">
+           <tr>
+               <td colspan="4"> <input type="text" value="" class="textPane" id="txtPane" oninput="TextInputted()" ></td>
+            </tr>
+
+
+           <tr>
+                <td><input type="button" value="AC" class="button"  onclick="clr()"></td>
+                <td><input type="button" value="DEL" class="button" onclick="lastOneCharClear()"></td>
+                <td><input type="button" value="+/-" class="button" onclick="changeSign()"></td>
+                <td><input type="button" value="%" class="button" onclick="hit('%')"></td>
+           </tr>
+
+           <tr>
+            <td><input type="button" value="√" class="button" onclick="hit('√')"></td>
+            <td><input type="button" value="(" class="button" onclick="hit('(')"></td>
+            <td><input type="button" value=")" class="button" onclick="hit(')')"></td>
+            <td><input type="button" value="π" class="button" onclick="hit('π')"></td>
+            </tr>
+
+           <tr>
+               <td><input type="button" value="7" class="button" onclick="hit('7')"></td>
+               <td><input type="button" value="8" class="button" onclick="hit('8')"></td>
+               <td><input type="button" value="9" class="button" onclick="hit('9')"></td>
+               <td><input type="button" value="/" class="button" onclick="hit('/')"></td>
+           </tr>
+
+           <tr>
+               <td><input type="button" value="4" class="button" onclick="hit('4')"></td>
+               <td><input type="button" value="5" class="button" onclick="hit('5')"></td>
+               <td><input type="button" value="6" class="button" onclick="hit('6')"></td>
+               <td><input type="button" value="*" class="button" onclick="hit('*')"></td>
+           </tr>
+
+           <tr>
+               <td><input type="button" value="1" class="button" onclick="hit('1')"></td>
+               <td><input type="button" value="2" class="button" onclick="hit('2')"></td>
+               <td><input type="button" value="3" class="button" onclick="hit('3')"></td>
+               <td><input type="button" value="-" class="button" onclick="hit('-')"></td>
+           </tr>
+
+           <tr>
+               <td><input type="button" value="0" class="button" onclick="hit('0')"></td>
+               <td><input type="button" value="." class="button" onclick="hit('.')"></td>
+               <td><input type="button" value="=" class="button" onclick="solve()" ></td>
+               <td><input type="button" value="+" class="button" onclick="hit('+')"></td>
+               
+               
+           </tr>
+
+       </table>
+    </body>
+</html>
